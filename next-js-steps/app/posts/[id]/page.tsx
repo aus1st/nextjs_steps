@@ -6,6 +6,12 @@ import { posts } from '@/app/data/posts'
 
 const inter = Inter({ subsets: ['latin'] })
 
+async function generateStaticParams() {
+     return posts.map((id)=> ({id: id}));
+ 
+}
+
+
 async function getPost(id:string) {
     let post = posts.find((post) => post.id === id);
     return post;
@@ -18,7 +24,7 @@ export default async function Post({params}: {params: {id: string}}) {
   return (
     <main className={styles.main}>
       <div className={styles.center}>
-      <h1>Title: {post?.title}</h1> <br/>
+      <h4>Title: {post?.title}</h4> <br/>
       <p>{post?.desc}</p>
       </div>
       <Link href="/">Home</Link> <br/>
