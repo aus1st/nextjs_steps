@@ -5,13 +5,14 @@ import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Post() {
   return (
     <main className={styles.main}>
       <div className={styles.center}>
-          <h1> Hello World</h1>      
+      <h1> Post</h1>
       </div>
-      <Link href="/posts">Post</Link>
+      <Link href="/">Home</Link>
+
     </main>
   )
 }
