@@ -6,7 +6,7 @@ import { posts } from '@/app/data/posts'
 
 const inter = Inter({ subsets: ['latin'] })
 
-async function generateStaticParams() {
+export async function generateStaticParams() {
      return posts.map((id)=> ({id: id}));
  
 }
