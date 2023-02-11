@@ -15,7 +15,8 @@ export default function Post() {
       <h1> Post</h1>
       </div>
       <Link href="/">Home</Link> <br/>
-    <button type="button" onClick={()=>router.push('/')}>Home</button>
+    {/* <button type="button" onClick={()=>router.push('/')}>Home</button> */}
+    
     </main>
   )
 }
